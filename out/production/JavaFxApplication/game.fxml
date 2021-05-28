@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameController">
+   <children>
+      <Label layoutX="209.0" layoutY="23.0" prefHeight="50.0" prefWidth="184.0" text="The Fair Price" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfInputPrice" layoutX="226.0" layoutY="188.0" />
+      <Label layoutX="119.0" layoutY="192.0" prefHeight="17.0" prefWidth="78.0" text="Enter the price" />
+      <Button layoutX="393.0" layoutY="187.0" mnemonicParsing="false" onAction="#submitPrice" text="Submit" />
+      <Label fx:id="displayResult" layoutX="226.0" layoutY="242.0" prefHeight="38.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

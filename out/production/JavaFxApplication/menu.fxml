@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+    <children>
+        <Label layoutX="179.0" layoutY="32.0" prefHeight="95.0" prefWidth="275.0" text="Le Juste Prix" textAlignment="CENTER" textFill="#f5d607" wrapText="true" AnchorPane.bottomAnchor="272.8">
+            <font>
+                <Font name="Bauhaus 93" size="44.0" />
+            </font>
+            <effect>
+                <DropShadow radius="7.02" spread="0.06" width="9.08">
+                    <color>
+                        <Color opacity="0.4999999701976776" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </Label>
+        <Button fx:id="easyDifficultyButton" layoutX="145.0" layoutY="174.0" mnemonicParsing="false" onAction="#changeSceneFromDifficultyButton" prefHeight="50.0" prefWidth="83.0" text="Facile">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="mediumDifficultyButton" layoutX="256.0" layoutY="174.0" mnemonicParsing="false" onAction="#changeSceneFromDifficultyButton" prefHeight="50.0" prefWidth="83.0" text="Moyen">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="hardDifficultyButton" layoutX="372.0" layoutY="174.0" mnemonicParsing="false" onAction="#changeSceneFromDifficultyButton" prefHeight="50.0" prefWidth="83.0" text="Difficile">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="458.0" layoutY="368.0" prefHeight="18.0" prefWidth="135.0" text="©2021 Gérald Devreux " />
+    </children>
+</AnchorPane>
