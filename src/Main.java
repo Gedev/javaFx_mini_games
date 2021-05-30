@@ -8,14 +8,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent game = FXMLLoader.load(getClass().getResource("game.fxml"));
-        Scene gameScene = new Scene(game);
+        Parent mainMenu = FXMLLoader.load(getClass().getResource("UI/mainMenu.fxml"));
+        Scene mainMenuScene = new Scene(mainMenu);
 
         //Setting the stage
-        stage.setTitle("The Fair Price");
-        stage.setScene(gameScene);
+        stage.setTitle("Portail");
+        stage.setScene(mainMenuScene);
         stage.show();
-
     }
 
     public static void main(String[] args) {

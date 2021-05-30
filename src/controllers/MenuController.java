@@ -20,7 +20,7 @@ public class MenuController {
     private Object Node;
 
     public void changeSceneFromDifficultyButton(javafx.event.ActionEvent event) throws Exception {
-        Parent game = FXMLLoader.load(getClass().getResource("../game.fxml"));
+        Parent game = FXMLLoader.load(getClass().getResource("../UI/TheJustPrice/game.fxml"));
         Scene gameScene = new Scene(game);
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -29,6 +29,4 @@ public class MenuController {
         window.setScene(gameScene);
         window.show();
     }
-
-
 }
